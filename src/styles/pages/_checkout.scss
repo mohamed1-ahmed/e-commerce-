@@ -1,0 +1,58 @@
+.checkout{
+    
+    & table{
+        margin: 0 auto;
+        width: 70%;
+        border-collapse: collapse;
+
+        & thead tr {
+            border-bottom: 1px solid $border-color-primary;
+            font-size: 1.6rem;
+            font-weight: 500;
+        }
+
+        & td{
+            padding: 1rem;
+        }
+
+        & tbody {
+
+            & tr {
+                border-bottom: 1px solid $border-color-secondary;
+
+                &:first-child{
+                    
+                    & td{
+                        padding-top: 2rem;
+                    }
+                }
+
+                &:last-child{
+
+                    & td{
+                        padding-bottom: 2rem;
+                    }
+                }
+
+                & td:first-child{
+                    width: 15rem;
+                    height: 10rem;
+        
+                    & img{
+                        display: block;
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    &__total{
+        margin: 0 auto;
+        width: 70%;
+        padding: 1rem;
+        font-size: 2.8rem;
+        text-align: right;
+    }
+}

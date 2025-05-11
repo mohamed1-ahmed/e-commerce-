@@ -1,0 +1,22 @@
+.spinner{
+    content: '';
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background: $color-primary;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner__container{
+    width: 5rem;
+    height: 5rem;
+    border: .5rem solid $color-secondary;
+    border-radius: 50%;
+    border-bottom-color: $bg-light-transparent;
+    animation: spinner 2s linear infinite;
+    opacity: 1;
+}

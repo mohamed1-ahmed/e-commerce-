@@ -1,0 +1,74 @@
+.clothing__type{
+    width: 35rem;
+    height: 25rem;
+    margin: 2rem;
+    border: 2px solid $border-color-primary;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 10s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    cursor: pointer;
+
+    &.hats{
+        background: url('https://i.ibb.co/cvpntL1/hats.png');
+    }
+
+    &.jackets{
+        background: url('https://i.ibb.co/px2tCc3/jackets.png');
+    }
+
+    &.sneakers{
+        background: url('https://i.ibb.co/0jqHpnp/sneakers.png');
+    }
+
+    &.womens{
+        background: url('https://i.ibb.co/GCCdy8t/womens.png');
+    }
+
+    &.mens{
+        background: url('https://i.ibb.co/R70vBrQ/men.png');
+    }
+
+    &.hats,
+    &.jackets,
+    &.sneakers,
+    &.womens,
+    &.mens{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &--category{
+        width: 15rem;
+        padding: 2rem;
+        border: 1px solid $border-color-primary;
+        text-align: center;
+        background-color: $bg-light-transparent;
+
+        & h2{
+            margin-bottom: 2rem;
+        }
+
+        & a{
+            color: $color-secondary;
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &:hover &--category{
+        background-color: $color-primary;
+    }
+
+    &:hover.hats,
+    &:hover.jackets,
+    &:hover.sneakers,
+    &:hover.womens,
+    &:hover.mens{
+        background-size: 150%;
+    }
+}

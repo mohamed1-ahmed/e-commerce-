@@ -1,0 +1,39 @@
+.btn{
+    border: none;
+    cursor: pointer;
+    padding: 0 2rem;
+    height: 5.6rem;
+    margin: 2rem 0;
+    font-weight: 600;
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+
+    &.btn-primary{
+        border: 1px solid $color-secondary;
+        background-color: $color-secondary;
+        color: $color-primary;
+    
+        &:hover{
+            background-color: $color-primary;
+            color: $color-secondary;
+        }
+    }
+
+    &.btn-secondary{
+        background-color: $color-primary;
+        color: $color-secondary;
+        border: 1px solid $color-secondary;
+
+        &:hover{
+            background-color: $color-secondary;
+            color: $color-primary;
+        }
+    }
+
+    &.btn-tertiary{
+        width: fit-content;
+        height: fit-content;
+        background-color: transparent;
+    }
+}

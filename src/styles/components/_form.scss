@@ -1,0 +1,34 @@
+form{
+    display: flex;
+    flex-direction: column;
+
+    & .form-group{
+        position: relative;
+        margin: 1.8rem 0;
+        display: flex;
+        flex-direction: column;
+
+        & input{
+            width: 45.6rem;
+            padding: 1rem;
+            border: none;
+            border-bottom: 1px solid #909090;
+            outline: none;
+
+            & ~ label{
+                position: absolute;
+                pointer-events: none;
+                left: .5rem;
+                top: 1rem;
+                transition: 300ms ease all;
+                color: #909090;
+            }
+
+            &:focus ~ label,
+            & ~ label.shrink{
+                top: -1.2rem;
+                color: $color-secondary;
+            }
+        }
+    }
+}

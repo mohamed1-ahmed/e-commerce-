@@ -1,0 +1,26 @@
+.navigation{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo{
+        
+        &--svg{
+            width: 6rem;
+            height: 5rem;
+        }
+    }
+
+    &__menu{
+        display: flex;
+        align-items: center;
+       
+        & > *{
+            margin: 0 .9rem;
+        }
+
+        span{
+            cursor: pointer;
+        }
+    }
+}
